@@ -15,13 +15,13 @@ A simple React application that demonstrates basic state management. Users can i
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/abhishekpatelmc/ReactBasics-counter.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd react-counter
+cd ReactBasics-counter
 ```
 
 3. Install the dependencies:
