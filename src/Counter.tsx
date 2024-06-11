@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PlusIcon from "./assets/PlusIcon";
 import MinusIcon from "./assets/MinusIcon";
+import ResetIcon from "./assets/ResetIcon";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
@@ -11,6 +12,10 @@ const Counter = () => {
 
   const handelMinus = () => {
     if (count > 0) setCount(count - 1);
+  };
+
+  const handelReset = () => {
+    setCount(0);
   };
 
   return (
@@ -27,6 +32,13 @@ const Counter = () => {
         onClick={handelMinus}
       >
         <MinusIcon />
+      </span>
+
+      <span
+        className="flex justify-center p-2 text-3xl items-center border hover:text-black hover:bg-slate-50 hover:cursor-pointer ease-in-out duration-300"
+        onClick={handelReset}
+      >
+        <ResetIcon />
       </span>
     </div>
   );
