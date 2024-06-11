@@ -1,7 +1,9 @@
+import Counter from "./Counter";
+
 function App() {
   return (
-    <div className="text-center">
-      <h1 className="text-4xl tracking-wider">Counter App</h1>
+    <div className="flex justify-center items-center h-screen">
+      <Counter />
     </div>
   );
 }
